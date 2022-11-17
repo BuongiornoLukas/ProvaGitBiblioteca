@@ -8,5 +8,13 @@ namespace ProvaGitBiblioteca
 {
     internal class Biblioteca
     {
+        string nome;
+        string indirizzo;
+        double oraApertura;
+        double oraChiusura;
+
+        List<Libro> elencoLibri = new List<Libro>(1000);
+
+
     }
 }
