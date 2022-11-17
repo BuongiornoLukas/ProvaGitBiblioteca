@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="189*"/>
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="351*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="CreaLibro" Content="Crea" HorizontalAlignment="Left" Height="38" Margin="32,370,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="InsAutore" TextWrapping="Wrap" Text="Inserisci autore" Margin="10,84,55,329"/>
+        <Label Content="Creazione libro:" HorizontalAlignment="Left" Height="29" Margin="10,31,0,0" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="InsTitolo" TextWrapping="Wrap" Text="Inserisci titolo" Margin="10,121,55,292"/>
+        <TextBox x:Name="InsAnnoPub" TextWrapping="Wrap" Text="Inserisci anno pubblicazione" Margin="10,166,55,247"/>
+        <TextBox x:Name="InsEditore" TextWrapping="Wrap" Text="Inserisci editore" Margin="10,217,55,196"/>
+        <TextBox x:Name="InsNumPag" TextWrapping="Wrap" Text="Inserisci numero di pagine" Margin="10,268,23,145"/>
+        <Label x:Name="CercaLibro" Content="Cerca libro:" HorizontalAlignment="Left" Height="29" Margin="59,20,0,0" VerticalAlignment="Top" Width="105" Grid.Column="1"/>
+        <TextBox x:Name="titoloCerca" TextWrapping="Wrap" Text="Inserisci titolo" Margin="57,54,96,350" Grid.Column="1"/>
+        <TextBlock x:Name="trova" HorizontalAlignment="Left" Height="96" Margin="45,121,0,0" TextWrapping="Wrap" Text="Libro trovato:" VerticalAlignment="Top" Width="166" Grid.Column="1"/>
+        <Label x:Name="CercaLibriAutore" Content="Cerca autore:" HorizontalAlignment="Left" Height="29" Margin="107,20,0,0" VerticalAlignment="Top" Width="104" Grid.Column="2"/>
+        <TextBox x:Name="autoreCerca" TextWrapping="Wrap" Text="Inserisci nome" Margin="105,54,140,350" Grid.Column="2"/>
+        <TextBlock x:Name="trova_Copy" HorizontalAlignment="Center" Height="96" Margin="0,121,0,0" TextWrapping="Wrap" Text="Libri trovati:" VerticalAlignment="Top" Width="166" Grid.Column="2"/>
 
     </Grid>
 </Window>
